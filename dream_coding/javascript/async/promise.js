@@ -40,3 +40,9 @@ fetchNumber
 		});
 	})
 	.then((num) => console.log(num));
+
+// 4. Error Handling
+const getHen = () =>
+	new Promise((resolve, reject) => {
+		setTimeout(() => resolve(`${hen} => `), 1000);
+	});
