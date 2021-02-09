@@ -129,3 +129,28 @@ console.log(add(1, 3));
 (function hello() {
 	console.log('IIFE');
 })();
+
+// Fun quiz time
+// Function calculate(command, a, b)
+// command: add, subtract, divide, multiply, remainder, square
+
+const calculate = (command, a, b) => {
+	switch (command) {
+		case 'add':
+			return a + b;
+		case 'subtract':
+			return a - b;
+		case 'divide':
+			return a / b;
+		case 'multiply':
+			return a * b;
+		case 'remiander':
+			return a % b;
+		case 'square':
+			return a ** b;
+		default:
+			throw Error('unknown command');
+	}
+};
+
+console.log(calculate('squar', 2, '4'));
