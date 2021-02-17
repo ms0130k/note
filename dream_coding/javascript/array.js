@@ -91,3 +91,8 @@ console.log(fruits.indexOf('추'));
 console.log(fruits.lastIndexOf('추'));
 console.log(fruits.toString());
 console.log(fruits.toLocaleString());
+console.clear();
+console.log(fruits.push('냐', '하', '하'));
+console.log(fruits);
+console.log(fruits.slice(1, 2));
+console.log(fruits);
