@@ -65,4 +65,45 @@ const students = [
 // Q8. check if there is a student with the score lower than 50
 {
 	console.log(students.some((student) => student.score < 50));
+	console.log(!students.every((student) => student.score >= 50));
+}
+
+console.clear();
+// Q9. compute students' average score
+{
+	const what = students.reduce((prev, curr, idx) => {
+		console.log(idx, prev, curr);
+		return prev + curr.score;
+	}, 0);
+	console.log(`what: ${what / students.length}`);
+}
+
+// Q10. make a string containing all the scores
+// result should be: '45, 80, 90, 66, 88'
+{
+	console.log(students.map((student) => student.score).join());
+	console.log(
+		students
+			.map((student) => student.score)
+			.filter((score) => score >= 50)
+			.join()
+	);
+}
+
+console.clear();
+// Bonus! do Q10 sorted in ascending order
+// result should be: '45, 66, 80, 88, 90'
+{
+	console.log(
+		students
+			.map((student) => student.score)
+			.sort()
+			.join()
+	);
+	console.log(
+		students
+			.map((student) => student.score)
+			.sort((a, b) => b - a)
+			.join()
+	);
 }
