@@ -30,8 +30,14 @@ class UserStorage {
 	}
 }
 
-new UserStorage()
-	.loginUser('coder', 'academy')
-	.then(new UserStorage().getRoles)
-	.then(console.log)
-	.catch(console.log);
+// new UserStorage()
+// 	.loginUser('coder', 'academy')
+// 	.then(new UserStorage().getRoles)
+// 	.then(console.log)
+// 	.catch(console.log);
+
+console.log(
+	new UserStorage().loginUser('coder', 'academy').then(() => {
+		return 3;
+	})
+);
