@@ -7,8 +7,7 @@ async function fetchUser() {
 }
 
 const user = fetchUser();
-user.then(console.log).catch(console.log);
-console.log(user);
+user.catch(console.log);
 
 // 2. await
 function delay(ms) {
@@ -16,19 +15,34 @@ function delay(ms) {
 }
 
 async function getApple() {
-	await delay(1000);
+	await delay(500);
 	return '사과';
 }
 
 async function getBanana() {
-	await delay(1000);
+	await delay(500);
 	return '바나나';
 }
-
-async function pickFruits() {
-	const apple = await getApple();
-	const banana = await getBanana();
-	return `${apple} + ${banana}`;
+function pickFruits() {
+	return getApple().then((apple) =>
+		getBanana().then((banana) => `${apple} + ${banana}`)
+	);
 }
 
 pickFruits().then(console.log);
+const param = () => '냐항';
+const test = () => param();
+console.log(test());
+
+async function pickFruitsA() {
+	const apple = await getApple();
+	const banana = await getBanana();
+	console.log(`${apple} + ${banana}`);
+	return `${apple} + ${banana}`;
+}
+
+pickFruitsA();
+function testFunc() {
+	console.log('머야이건');
+}
+new Promise((resolve) => setTimeout(resolve, 500)).then(testFunc);
