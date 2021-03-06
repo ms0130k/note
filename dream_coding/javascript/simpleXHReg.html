@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p id="writeData" class="data">Off-Line</p>
+		<p id="lastStamp">No Data yet</p>
+		<script>
+			const fullData = document.getElementById('writeData');
+			const lastData = document.getElementById('lastStamp');
+
+			function fetchData() {
+				console.log('Fetching updated data.');
+				let xhr = new XMLHttpRequest();
+				xhr.open('GET', 'time-log.txt');
+				xhr.onload = function () {
+					updateDisplay(xhr.response);
+				};
+				xhr.send();
+			}
+
+			function updateDisplay(text) {
+				fullData.textContent = text;
+
+				let timeArray = text.split('\n');
+
+				// included because some file systems always include a blank line at the end of text files.
+				if (timeArray[timeArray.length - 1] === '') {
+					timeArray.pop();
+				}
+				setTimeout(() => {
+					test();
+					setTimeout(() => {
+						test();
+						setTimeout(() => {
+							test();
+							setTimeout(() => test());
+						}, 500);
+					}, 500);
+				}, 500);
+				function test() {
+					lastData.textContent = timeArray[timeArray.length - 1];
+					timeArray.pop();
+				}
+			}
+			fetchData();
+			// setInterval(fetchData, 500);
+		</script>
+	</body>
+</html>

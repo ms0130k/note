@@ -46,3 +46,12 @@ function testFunc() {
 	console.log('머야이건');
 }
 new Promise((resolve) => setTimeout(resolve, 500)).then(testFunc);
+
+// 3. useful APIs
+function pickAllFruits() {
+	return Promise.all([getApple(), getBanana()]).then((fruits) =>
+		fruits.join(' + ')
+	);
+}
+
+pickAllFruits().then(console.log);
