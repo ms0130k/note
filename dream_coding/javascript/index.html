@@ -6,6 +6,26 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<script src="async/test_async.js"></script>
+		<style>
+			#big {
+				width: 800px;
+				height: 800px;
+				background-color: red;
+			}
+			#mid {
+				width: 600px;
+				height: 600px;
+				background-color: green;
+			}
+			#small {
+				width: 400px;
+				height: 400px;
+				background-color: blue;
+			}
+		</style>
+		<div id="big" class="big">
+			<div id="mid" class="mid"><div id="small" class="small"></div></div>
+		</div>
+		<script src="/async/promise.js"></script>
 	</body>
 </html>

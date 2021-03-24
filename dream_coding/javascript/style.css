@@ -1,0 +1,32 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: color;
+	padding: 1rem 1rem 1rem 1rem;
+}
+.navbar__logo {
+	font-size: 2rem;
+	flex-grow: 1;
+}
+.navbar__menu {
+	display: flex;
+	flex-grow: 3;
+	justify-content: space-between;
+}
+.menu-main {
+	font-size: 24px;
+}
+.navbar__links {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.link-icon {
+	font-size: 2rem;
+}
