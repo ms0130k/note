@@ -11,4 +11,4 @@
 - 스프링 MVC에서도 클라이언트에서 전송한 xml데이터나 json 등등 데이터를 컨트롤러에서 DOM객체나 자바 객체로 변환해서 송수신할 수 있다.
 - @RequestBody 어노테이션과 @ResponseBody 어노테이션이 각각 HTTP요청 바디를 자바객체로 변환하고 자바객체를 다시 HTTP 응답 바디로 변환해준다.
 
-<https://cheershennah.tistory.com/179>
+[https://cheershennah.tistory.com/179](https://cheershennah.tistory.com/179)
