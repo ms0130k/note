@@ -6,3 +6,6 @@ open
 
 ## SQL
 - Recursive, CTE
+
+## jQuery
+- ajax error
