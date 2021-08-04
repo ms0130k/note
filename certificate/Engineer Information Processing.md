@@ -43,4 +43,16 @@
 - MVC 구조
 - 파이프 필터 구조
 13. 럼바우(Rumbaugh)의 객체지향 분석에서 사용하는 분석 활동으로 옳은 것은?
-- 객체 모델링, 동적 모델링, 정적 모델링
+- 객체 모델링, 동적 모델링, 기능 모델링
+
+14. UML 다이어그램이 아닌 것은?
+- 액티비티 다이어그램(Activity diagram)
+- 절차 다이어그램(Procedural diagram)
+- 클래스 다이어그램(Class diagram)
+- 시퀀스 다이어그램(Sequence diagram)
+15. UML 모델에서 한 객체가 다른 객체에게 오퍼레이션을 수행하도록 지정하는 의미적 관계로 옳은 것은?
+- Dependency
+- Realization
+- Generalization
+- Association
+- 16.
