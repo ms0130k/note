@@ -14,3 +14,8 @@
 - instance
 5. 객체지향 설계에서 객체가 가지고 있는 속성과 오퍼레이션의 일부를 감추어서 객체의 외부에서는 접근이 불가능하게 하는 개념은?
 - 캡슐화(Encapsulation), 정보은닉(Information Hiding)
+6. Gof(Gangs of Four) 디자인 패턴에 대한 설명으로 틀린 것은?
+- factory method pattern은 상위클래스에서 객체를 생성하는 인터페이스를 정의하고, 하위클래스에서 인스턴스를 생성하도록 하는 방식이다.
+- prototype pattern은 prototype을 먼저 생성하고 인스턴스를 복제하여 사용하는 구조이다.
+- bridge pattern은 기존에 구현되어 있는 클래스에 기능 생성 시 기존 클래스를 재사용할 수 있도록 중간에서 맞춰주는 역할을 한다.
+- mediator pattern은 객체간의 통제와 지시의 역할을 하는 중재자를 두어 객체지향의 목표를 달성하게 해준다.
