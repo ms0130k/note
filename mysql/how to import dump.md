@@ -6,5 +6,6 @@
 > gzip -d dump_file.gz
 4. import dump
 > move to dump file path
+
 > mysql -u test_user -p test_db < dump_file_name
 5. write password
