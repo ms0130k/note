@@ -1,5 +1,5 @@
 1. create db
-- create database test_db;
+      - create database test_db;
 2. create user
 - create user 'test_user'@'localhost' identified by 'password';
 3. set log_bin_trust_function_creators
